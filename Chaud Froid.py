@@ -71,7 +71,7 @@ def prog():
                    print("GGWP, vous l'avez trouvé en ", coup, " coups !")
     
 
-    restart = input("Veux-tu recommencer à jouer ? o/n")
+    restart = input("Veux-tu recommencer à jouer ? o/n ")
     if restart == "o":
         prog()
     else:
