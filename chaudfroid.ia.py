@@ -4,12 +4,12 @@ from time import *
 nombre = randint(1,101)
 nombreJ = 0
 nombreB = 0
-neuf = 9
-GGJ = 0
-GGB = 0
+PVJ = 3
+PVB = 3
+gg = 0
 
 print("Jouer avec un bot")
-while neuf != 0:
+while gg != 1:
     
     nombreB = randint(1,101)
     nombreJ = int(input("Joueur 1 : "))
@@ -20,13 +20,20 @@ while neuf != 0:
         print("C'est moins !")
         
     if nombreJ == nombre:
-        neuf = 0
-        GGJ = GGJ + 1
+        PVB = PVB - 1
+        print("Vous avez infliger un de dégât à l'adversaire, il est à ", PVB)
+        nombre = randint(1,101)
     elif nombreB == nombre:
-        neuf = 0
-        GGB = GGB + 1
+        PVJ = PVJ - 1
+        print("Vous avez perdu un point de vie, vous êtes à ", PVJ)
+        nombre = randint(1,101)
 
-if GGJ == 1:
+    if PVJ == 0:
+        gg = 1
+    elif PVB == 0:
+        gg = 1
+        
+if PVB == 0:
     print("Bien joué ! Vous avez gagné !")
-elif GGB == 1:
+elif PVJ == 0:
     print("Dommage.. retentez une prochaine fois !")
