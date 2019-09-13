@@ -12,7 +12,7 @@ while ma bite != 0:
     nombreB = int(input("BOT : "))
     if nombreJ == 70:
         ma bite = 0    
-    if nombreB == 70:
+    if nombreB == 70 or "":
         ma bite = 0
 print("GG")
 
