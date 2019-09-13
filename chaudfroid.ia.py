@@ -6,7 +6,15 @@ nombreJ = 0
 nombreB = 0
 
 print("Jouer avec un bot")
-while nombreJ, nombreB != nombre:
+while ma bite != 0:
     nombreJ = int(input("Joueur 1 : "))
     nombreB = int(input("BOT : "))
+    if nombreJ == 70:
+        ma bite = 0    
+    if nombreB == 70:
+        ma bite = 0
 print("GG")
+
+
+
+while nombreJ, nombreB != nombre:
