@@ -6,7 +6,7 @@ nombreJ = 0
 nombreB = 0
 
 print("Jouer avec un bot")
-while nombreJ and nombreB != nombre:
+while nombreJ, nombreB != nombre:
     nombreJ = int(input("Joueur 1 : "))
     nombreB = int(input("BOT : "))
 print("GG")
