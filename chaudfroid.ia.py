@@ -4,6 +4,7 @@ from time import *
 nombre = 70
 nombreJ = 0
 nombreB = 0
+ma bite = 9
 
 print("Jouer avec un bot")
 while ma bite != 0:
