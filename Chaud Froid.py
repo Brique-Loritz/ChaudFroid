@@ -12,12 +12,23 @@ def prog():
     PVB = 3
     gg = 0
 
-    print("On va jouer à un jeu ! ")
+    print("Bienvenue dans Chaud Froid ! ")
 
-    joueur = int(input("Vous êtes seul ? Ou deux ? (répondre par le chiffre) ")) 
+    print("1/ Vous êtes seul ?")
+    print("2/ Ou deux ?")
+    print("(répondre par le chiffre)")
+
+    joueur = int(input())
 
     if joueur == 1: 
-        diff = int(input("Quelle difficultée ? (de 1 à 3) ou alors vous voulez jouer contre un bot ? (4) ")) 
+        print("Quel type de jeu ?")
+        print("1/ Facile")
+        print("2/ Normale")
+        print("3/ Difficile")
+        print("4/ Contre un bot")
+        print("(répondez par le chiffre)")
+        diff = int(input())
+        
         if diff == 1:
             print()
             nombre = randint(1,101) 
@@ -31,6 +42,7 @@ def prog():
                     print("C'est moins !")
                 else: 
                     print("GGWP, vous l'avez trouvé en ", coup, " coups !")
+                    
         elif diff == 2:
             print()
             nombre = randint(1,1001)
@@ -44,6 +56,7 @@ def prog():
                     print("C'est moins !")
                 else:
                     print("GGWP, vous l'avez trouvé en ", coup, " coups !")
+                    
         elif diff == 3:
             print()
             nombre = randint(1,10001)
@@ -57,9 +70,12 @@ def prog():
                     print("C'est moins !")
                 else:
                     print("GGWP, vous l'avez trouvé en ", coup, " coups !")
+                    
         elif diff == 4:
             print()
-            print("Vous allez jouer contre un bot, vous devez trouver le nombre (entre 1 et 100), chaque nombre trouvés enlève 1 point de vie à l'adversaire, vous avez trois vies, bonne chance !")
+            print("Vous allez jouer contre un bot, vous devez trouver le nombre (entre 1 et 100).")
+            print("Chaque nombres trouvés enlève 1 point de vie à l'adversaire.")
+            print("Vous avez trois vies, bonne chance !")
             while gg != 1:
     
                 nombreB = randint(1,101)
