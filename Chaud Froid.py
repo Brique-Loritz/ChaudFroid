@@ -38,8 +38,10 @@ def prog():
                 coup = coup + 1 
                 if nom < nombre:
                     print("C'est plus !")
+                    print()
                 elif nom > nombre: 
                     print("C'est moins !")
+                    print()
                 else: 
                     print("GGWP, vous l'avez trouvé en ", coup, " coups !")
                     
@@ -52,8 +54,10 @@ def prog():
                 coup = coup + 1
                 if nom < nombre:
                     print("C'est plus !")
+                    print()
                 elif nom > nombre:
                     print("C'est moins !")
+                    print()
                 else:
                     print("GGWP, vous l'avez trouvé en ", coup, " coups !")
                     
@@ -66,8 +70,10 @@ def prog():
                 coup = coup + 1
                 if nom < nombre:
                     print("C'est plus !")
+                    print()
                 elif nom > nombre:
                     print("C'est moins !")
+                    print()
                 else:
                     print("GGWP, vous l'avez trouvé en ", coup, " coups !")
                     
@@ -83,16 +89,20 @@ def prog():
     
                 if nombreJ < nombre:
                     print("C'est plus !")
+                    print()
                 elif nombreJ > nombre: 
                     print("C'est moins !")
+                    print()
         
                 if nombreJ == nombre:
                     PVB = PVB - 1
                     print("Vous avez infliger un de dégât à l'adversaire, il est à ", PVB)
+                    print()
                     nombre = randint(1,101)
                 elif nombreB == nombre:
                     PVJ = PVJ - 1
                     print("Vous avez perdu un point de vie, vous êtes à ", PVJ)
+                    print()
                     nombre = randint(1,101)
 
                 if PVJ == 0:
@@ -104,12 +114,6 @@ def prog():
                 print("Bien joué ! Vous avez gagné !")
             elif PVJ == 0:
                 print("Dommage.. retentez une prochaine fois !")
-
-            restart = input("Veux-tu recommencer à jouer ? o/n ")
-            if restart == "o":
-                prog()
-            else:
-                exit()
     
         else:
             print("Impossible de jouer dans une difficulté supérieur à 4..")
@@ -126,14 +130,17 @@ def prog():
              coup = coup + 1
              if nom < nombre:
                 print("C'est plus !")
+                print()
              elif nom > nombre:
                 print("C'est moins !")
+                print()
              else:
                    print("GGWP, vous l'avez trouvé en ", coup, " coups !")
     
 
     restart = input("Veux-tu recommencer à jouer ? o/n ")
     if restart == "o":
+        print()
         prog()
     else:
         exit()
