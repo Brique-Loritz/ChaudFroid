@@ -34,6 +34,6 @@ while gg != 1:
         gg = 1
         
 if PVB == 0:
-    print("Bien joué ! Vous avez gagné !")
+    print("Bien joué ! Vous avez gagné ! ")
 elif PVJ == 0:
     print("Dommage.. retentez une prochaine fois !")
