@@ -2,6 +2,7 @@ from random import *
 def prog():
     
     nombre = randint(1,101)
+    nombreBot = randint(1,101)
     nom = 0
     joueur = 0
     coup = 0
@@ -99,11 +100,11 @@ def prog():
                     print("Vous avez infliger un de dégât à l'adversaire, il est à ", PVB)
                     print()
                     nombre = randint(1,101)
-                elif nombreB == nombre:
+                elif nombreB == nombreBot
                     PVJ = PVJ - 1
                     print("Vous avez perdu un point de vie, vous êtes à ", PVJ)
                     print()
-                    nombre = randint(1,101)
+                    nombreNot = randint(1,101)
 
                 if PVJ == 0:
                     gg = 1
