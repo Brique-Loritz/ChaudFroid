@@ -12,6 +12,8 @@ nombreB = 0
 PVJ = 3
 PVB = 3
 gg = 0
+vmin = 1
+vmax = 101
 
 print()
 print("Vous allez jouer contre un bot, vous devez trouver le nombre (entre 1 et 100).")
@@ -19,7 +21,13 @@ print("Chaque nombres trouvés enlève 1 point de vie à l'adversaire.")
 print("Vous avez trois vies, bonne chance !")
 while gg != 1:
 
-    nombreB = randint(1,101)
+    nombreB = randint(vmin,vmax)
+    if nombreB < nombreBot:
+        vmin = nombreB
+    elif nombreB > nombreBot:
+        vmax = nombreB
+        
+            
     nombreJ = int(input("Un nombre ? "))
 
     if nombreJ < nombre:
@@ -39,6 +47,9 @@ while gg != 1:
         print("Vous avez perdu un point de vie, vous êtes à ", PVJ)
         print()
         nombreBot = randint(1,101)
+        vmin = 1
+        vmax = 101
+        
 
     if PVJ == 0:
         gg = 1
