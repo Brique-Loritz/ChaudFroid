@@ -87,7 +87,7 @@ def prog():
             print("Impossible de jouer dans une difficulté supérieur à 4..")
 
     elif joueur == 2:
-         nombre = int(input("Joueur 1, mettez un nombre dans l'espace suivant (redonne le clavier à ton ami juste après): "))
+         nombre = int(input("Joueur 1, mettez un nombre (entre 1 et 100) dans l'espace suivant (redonne le clavier à ton ami juste après): "))
 
          for vide in range(50):
             print()
@@ -114,4 +114,3 @@ def prog():
         exit()
 
 prog()
-
