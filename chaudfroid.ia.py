@@ -3,10 +3,6 @@ from time import *
 
 nombre = randint(1,101)
 nombreBot = randint(1,101)
-nom = 0
-joueur = 0
-coup = 0
-diff = 0
 nombreJ = 0
 nombreB = 0
 PVJ = 3
